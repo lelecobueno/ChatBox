@@ -1,19 +1,25 @@
 function getBotResponse(input) {
-    //rock paper scissors
-    if (input == "rock") {
-        return "paper";
-    } else if (input == "paper") {
-        return "scissors";
-    } else if (input == "scissors") {
-        return "rock";
+    //jogo pedra papel e tesoura
+    if (input == "pedra") {
+        return "papel";
+    } else if (input == "papel") {
+        return "tesoura";
+    } else if (input == "tesoura") {
+        return "pedra";
     }
 
-    // Simple responses
-    if (input == "hello") {
-        return "Hello there!";
-    } else if (input == "goodbye") {
+    // Respostas simples
+    if (input == "Eai") {
+        return "Salve!";
+    } else if (input == "tchau") {
         return "Talk to you later!";
-    } else {
+    }
+	else if (input == "Vc é bonito?"){
+		return "Maravilhoso :)";
+	}
+	else {
         return "Try asking something else!";
     }
+
+   
 }
