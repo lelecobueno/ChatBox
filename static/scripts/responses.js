@@ -1,3 +1,5 @@
+var led;
+
 function getBotResponse(input) {
     //jogo pedra papel e tesoura
     if (input == "pedra") {
@@ -16,6 +18,13 @@ function getBotResponse(input) {
     }
 	else if (input == "Vc é bonito?"){
 		return "Maravilhoso :)";
+		
+	}
+	else if (input == "Acenda o led"){
+	led = 1;
+	}
+	else if (input == "Apague o led"){
+	led = 0;
 	}
 	else {
         return "Try asking something else!";
